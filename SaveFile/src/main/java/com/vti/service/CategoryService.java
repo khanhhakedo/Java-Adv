@@ -8,6 +8,8 @@ import java.util.List;
 public interface CategoryService {
     public List<Category> getAll();
     public List<Category> getByCategoryName(String categoryName);
+
+    public  List<Category> getByCategoryId(Integer id);
     public void save(Category category);
 
     public void update(Category category);

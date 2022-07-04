@@ -1,5 +1,6 @@
 package com.vti.service;
 
+
 import com.vti.entity.Article;
 import com.vti.repository.ArticleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,12 @@ public class ArticleServiceImpl  implements  ArticleService{
     @Override
     public List<Article> getByName(String articleName) {
         List<Article> articles = articleRepository.findByArticleName(articleName);
+        return articles;
+    }
+
+    @Override
+    public List<Article> getArticleById(Integer id) {
+        List<Article> articles =articleRepository.getArticleById(id);
         return articles;
     }
 

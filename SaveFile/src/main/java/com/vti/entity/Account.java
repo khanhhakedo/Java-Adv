@@ -44,12 +44,12 @@ public class Account implements Serializable {
     public String toString() {
         return "Account{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
-                ", fullname='" + fullname + '\'' +
-                ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
-                ", address='" + address + '\'' +
-                ", products=" + products +
+                ", userName='" + userName + '\'' + "\n"+
+                ", fullname='" + fullname + '\'' +"\n"+
+                ", password='" + password + '\'' +"\n"+
+                ", email='" + email + '\'' +"\n"+
+                ", address='" + address + '\'' +"\n"+
+                ", products=" + products +"\n"+
                 '}';
     }
 }

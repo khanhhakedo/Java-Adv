@@ -8,7 +8,7 @@ public interface ProductService {
 
     public List<Product> getAll();
     public List<Product> getByName(String productName);
-//    List<Product> getByProductId(Integer id);
+    public List<Product> getByProductId(Integer id);
     public void save(Product product);
 
     public void update(Product product);

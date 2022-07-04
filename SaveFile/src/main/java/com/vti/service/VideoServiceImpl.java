@@ -1,6 +1,7 @@
 package com.vti.service;
 
 import com.vti.entity.Video;
+import com.vti.repository.CategoryRepository;
 import com.vti.repository.VideoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,6 @@ public class VideoServiceImpl implements VideoService {
    @Autowired
    private VideoRepository videoRepository;
 
-
     @Override
     public List<Video> getAll() {
         return videoRepository.findAll();
@@ -22,6 +22,12 @@ public class VideoServiceImpl implements VideoService {
     public List<Video> getByName(String videoName) {
         List<Video> videoList = videoRepository.findByVideoname(videoName);
         return videoList;
+    }
+
+    @Override
+    public List<Video> getById(Integer id) {
+        List<Video> videos = videoRepository.getVideoById(id);
+        return videos;
     }
 
     @Override

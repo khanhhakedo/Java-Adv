@@ -35,10 +35,10 @@ public class Article implements Serializable {
     public String toString() {
         return "Article{" +
                 "id=" + id +
-                ", articleName='" + articleName + '\'' +
-                ", content='" + content + '\'' +
-                ", createdDate=" + createdDate +
-                ", product=" + product +
+                ", articleName='" + articleName + '\'' +"\n"+
+                ", content='" + content + '\'' +"\n"+
+                ", createdDate=" + createdDate +"\n"+
+                ", product=" + product +"\n"+
                 '}';
     }
 }

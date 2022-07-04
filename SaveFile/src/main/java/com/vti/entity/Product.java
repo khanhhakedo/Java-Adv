@@ -38,11 +38,11 @@ public class Product implements Serializable {
     public String toString() {
         return "Product{" +
                 "id=" + id +
-                ", productName='" + productName + '\'' +
-                ", price=" + price +
-                ", type='" + type + '\'' +
-                ", category=" + category +
-                ", accounts=" + accounts +
+                ", productName='" + productName + '\'' +"\n"+
+                ", price=" + price +"\n"+
+                ", type='" + type + '\'' +"\n"+
+                ", category=" + category +"\n"+
+                ", accounts=" + accounts +"\n"+
                 '}';
     }
 }

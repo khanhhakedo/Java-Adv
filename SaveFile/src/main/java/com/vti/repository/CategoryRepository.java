@@ -10,6 +10,8 @@ import java.util.List;
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, Integer> {
 
+
+    List<Category> getCategoryById(Integer id);
     List<Category> findByCategoryName(String categoryName);
 
 //    public boolean isAccountExistsById(Integer id);

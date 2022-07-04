@@ -35,10 +35,10 @@ public class Category implements Serializable {
     public String toString() {
         return "Category{" +
                 "id=" + id +
-                ", categoryName='" + categoryName + '\'' +
-                ", createdDate=" + createdDate +
-                ", videoList=" + videoList +
-                ", products=" + products +
+                ", categoryName='" + categoryName + '\'' +"\n"+
+                ", createdDate=" + createdDate +"\n"+
+                ", videoList=" + videoList +"\n"+
+                ", products=" + products +"\n"+
                 '}';
     }
 }

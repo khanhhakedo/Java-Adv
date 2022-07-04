@@ -8,6 +8,7 @@ import java.util.List;
 public interface VideoService {
     public List<Video> getAll();
     public List<Video> getByName(String videoName);
+    public List<Video> getById(Integer id);
 
     public void save(Video video);
 

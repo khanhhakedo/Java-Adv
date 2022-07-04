@@ -11,4 +11,6 @@ import java.util.List;
 public interface VideoRepository extends JpaRepository<Video, Integer> {
 
     List<Video> findByVideoname (String videoName);
+
+    List<Video> getVideoById(Integer id);
 }
